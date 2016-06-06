@@ -25,7 +25,7 @@ IF("${isSystemDir}" STREQUAL "-1")
 ENDIF("${isSystemDir}" STREQUAL "-1")
 set(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)  # for libs outside the sourcetree
 
-#set(cmake_cxx_flags_general "-pthread -std=c++11")  # -std=c++11
+set(cmake_cxx_flags_general "-pthread -std=c++11")
 set(cmake_cxx_flags_warnings "-Wall -Wextra -Werror")
 set(CMAKE_CXX_FLAGS "${cmake_cxx_flags_general} ${cmake_cxx_flags_warnings}")
 
